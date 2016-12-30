@@ -40,9 +40,9 @@ public class MainActivity extends Activity {
         livrosDoacao = new ArrayList<Livro>();
         meusLivros = new ArrayList<Livro>();
         user = new Usuario("Bruno", "bruno@doalivro.com", "(49) 9-9976-5432", true);//CRIA UM NOVO USUARIO E DEIXA LOGADO
-        livro1 = new Livro("O Pequeno Príncipe","Anoine de Saint-Exupéry","Séc. XVII", "Luís Carlos", "luis@doalivro.com");//CRIA LIVRO
-        livro2 = new Livro("O Hobbit","J. R. R. Tolkien","1937", "João Inácio", "joaoinacio@doalivro.com");//CRIA LIVRO
-        livro3 = new Livro("Código da Vinci","Dan Brown","2004", "Marcos Gomes", "marcosgomes@doalivro.com");//CRIA LIVRO
+        livro1 = new Livro("O Pequeno Príncipe", "Séc. XVII", "Anoine de Saint-Exupéry", "Luís Carlos", "luis@doalivro.com");//CRIA LIVRO
+        livro2 = new Livro("O Hobbit", "1937", "J. R. R. Tolkien",  "João Inácio", "joaoinacio@doalivro.com");//CRIA LIVRO
+        livro3 = new Livro("Código da Vinci", "2004", "Dan Brown", "Marcos Gomes", "marcosgomes@doalivro.com");//CRIA LIVRO
         livrosDoacao.add(livro1);//ADICIONA LIVRO1
         livrosDoacao.add(livro2);//ADICIONA LIVRO2
         livrosDoacao.add(livro3);//ADICIONA LIVRO3
