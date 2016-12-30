@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DoaLivro</string>
+    <string name="titulo">TÍTULO DO LIVRO</string>
+    <string name="ano">ANO DA PUBLICAÇÃO</string>
+    <string name="autor">AUTOR DO LIVRO</string>
+    <string name="solicitar">SOLICITAR</string>
+    <string name="proximo">PRÓXIMO</string>
+    <string name="anterior">ANTERIOR</string>
+    <string name="fechar">FECHAR</string>
+    <string name="livros_em_doacao">LIVROS EM DOAÇÃO</string>
+    <string name="doar_livro">DOAR LIVRO</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="criar_conta">CRIAR CONTA</string>
+    <string name="sair">SAIR</string>
+</resources>

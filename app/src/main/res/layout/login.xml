@@ -1,0 +1,32 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/capa_doa_livro">
+
+    <Button
+        android:text="@string/entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_entrar" />
+
+    <Button
+        android:text="@string/criar_conta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_criarConta" />
+
+    <Button
+        android:text="@string/sair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_sair" />
+
+    <CheckBox
+        android:text="PERMENCER LOGADO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox" />
+
+</LinearLayout>
