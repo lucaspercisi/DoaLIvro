@@ -6,18 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-/*
-                 ARRUMAR
-
-- OS EDIT TEXT NÃO DEVEM ACEITAR CAMPOS VAZIOS
-
-
-
-
-*/
-
-
-
 public class TelaDoaLivro {
     MainActivity main;
     TelaPrincipal tela_principal;
