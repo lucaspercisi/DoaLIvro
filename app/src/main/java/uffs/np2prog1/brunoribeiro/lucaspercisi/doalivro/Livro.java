@@ -1,8 +1,10 @@
 package uffs.np2prog1.brunoribeiro.lucaspercisi.doalivro;
+import android.widget.ImageView;
 
 public class Livro {
 
     private String titulo, ano, autor, nomeDono, contato;
+    ImageView capa;
 
     public Livro(String titulo, String ano, String autor, String nomeDono, String contato) {
 
@@ -14,6 +16,8 @@ public class Livro {
 
     }
 
+    public ImageView getCapa() {return capa;}
+    public void setCapa(ImageView capa) {this.capa = capa;}
     public String getTitulo() {return titulo;}
     public void setTitulo(String titulo) {this.titulo = titulo;}
     public String getAno() {return ano;}

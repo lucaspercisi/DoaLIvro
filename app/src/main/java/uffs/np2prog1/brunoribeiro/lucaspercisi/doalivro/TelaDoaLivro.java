@@ -67,7 +67,7 @@ public class TelaDoaLivro {
                             return;
                         }
 
-                        main.getLivrosDoacao().add(new Livro(titulo, ano, autor, main.user.getNome(), main.user.getEmail()));//CONSTRÓI NOVO LIVRO COM OS DADOS INFORMADOS NO CAMPO
+                        //main.getLivrosDoacao().add(new Livro(titulo, ano, autor, main.user.getNome(), main.user.getEmail()));//CONSTRÓI NOVO LIVRO COM OS DADOS INFORMADOS NO CAMPO
                         main.user.setDoacoes(main.user.getDoacoes() + 1);//INCREMENTA ACUMULATIVO DE DOAÇÃOES
                         main.ExibirMensagem("Parabéns, você contribuiu para um mundo melhor.");
 
