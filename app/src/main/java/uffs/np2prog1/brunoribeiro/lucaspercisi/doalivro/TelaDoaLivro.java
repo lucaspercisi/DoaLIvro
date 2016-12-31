@@ -42,6 +42,7 @@ public class TelaDoaLivro {
         b_doar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 AlertDialog.Builder dialogo = new AlertDialog.Builder(main);
                 dialogo.setTitle("AVISO");
                 dialogo.setMessage("Publicar livro para doação?");
@@ -54,20 +55,23 @@ public class TelaDoaLivro {
                         String ano = et_ano.getText().toString();
                         String autor = et_autor.getText().toString();
 
-                       if(!titulo.equals(null)){
-                           main.ExibirMensagem("TÍTULO INCORRETO");
-                           return;
+                        //POSSÍVEIS ERROS DE DIGITAÇÃO
+                        if(titulo == null || titulo.trim().isEmpty()) {
+                            main.ExibirMensagem("TÍTULO INCORRETO");
+                            return;
                         }
-                        if(!ano.equals(null)){
+
+                        if(ano == null || ano.trim().isEmpty()){
                             main.ExibirMensagem("ANO INCORRETO");
                             return;
                         }
-                        if(!autor.equals(null)){
+
+                        if(autor == null || autor.trim().isEmpty()){
                             main.ExibirMensagem("AUTOR INCORRETO");
                             return;
                         }
 
-                        //main.getLivrosDoacao().add(new Livro(titulo, ano, autor, main.user.getNome(), main.user.getEmail()));//CONSTRÓI NOVO LIVRO COM OS DADOS INFORMADOS NO CAMPO
+                        main.getLivrosDoacao().add(new Livro(titulo, ano, autor, main.user.getNome(), main.user.getEmail()));//CONSTRÓI NOVO LIVRO COM OS DADOS INFORMADOS NO CAMPO
                         main.user.setDoacoes(main.user.getDoacoes() + 1);//INCREMENTA ACUMULATIVO DE DOAÇÃOES
                         main.ExibirMensagem("Parabéns, você contribuiu para um mundo melhor.");
 
