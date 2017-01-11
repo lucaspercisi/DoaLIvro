@@ -12,4 +12,5 @@
     <string name="entrar">ENTRAR</string>
     <string name="criar_conta">CRIAR CONTA</string>
     <string name="sair">SAIR</string>
+    <string name="revogar">REVOGAR ACESSO</string>
 </resources>

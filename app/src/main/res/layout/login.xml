@@ -5,28 +5,10 @@
     android:orientation="vertical"
     android:background="@drawable/capa_doa_livro">
 
-    <Button
-        android:text="@string/entrar"
-        android:layout_width="match_parent"
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/botao_entrar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/b_entrar" />
-
-    <Button
-        android:text="@string/criar_conta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/b_criarConta" />
-
-    <Button
-        android:text="@string/sair"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/b_sair" />
-
-    <CheckBox
-        android:text="PERMENCER LOGADO"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkBox" />
+        android:layout_marginTop="28dp" />
 
 </LinearLayout>

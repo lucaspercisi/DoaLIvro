@@ -1,4 +1,4 @@
-package uffs.np2prog1.brunoribeiro.lucaspercisi.doalivro;
+package tk.doalivro.doalivro;
 
 import org.junit.Test;
 

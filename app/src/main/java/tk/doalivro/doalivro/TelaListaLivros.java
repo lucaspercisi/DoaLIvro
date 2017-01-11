@@ -1,20 +1,18 @@
-package uffs.np2prog1.brunoribeiro.lucaspercisi.doalivro;
+package tk.doalivro.doalivro;
 
-import android.app.AlertDialog;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class TelaListaLivros {
 
     //ATRINUTOS
-    MainActivity main;
-    TelaPrincipal tela_principal;
-    Button b_solicitar, b_anterior, b_proximo, b_fechar;
-    TextView tv_titulo, tv_ano, tv_autor;
+    private MainActivity main;
+    private TelaPrincipal tela_principal;
+    private Button b_solicitar, b_anterior, b_proximo, b_fechar;
+    private TextView tv_titulo, tv_ano, tv_autor, doador;
     //ImageView iv_capa;
-    int index;
+    private int index;
 
     public TelaListaLivros(MainActivity main, TelaPrincipal tela_principal) {
         setMain(main);
@@ -38,6 +36,7 @@ public class TelaListaLivros {
         tv_titulo = (TextView) main.findViewById(R.id.tv_titulo);
         tv_ano = (TextView) main.findViewById(R.id.tv_ano);
         tv_autor = (TextView) main.findViewById(R.id.tv_autor);
+        doador = (TextView) main.findViewById(R.id.doador);
        // iv_capa = (ImageView) main.findViewById(R.id.iv_capa);
         atualizaCampos(index);
         //txtstatus = (TextView) act.findViewById(R.id.txtstatus);
@@ -104,6 +103,7 @@ public class TelaListaLivros {
         tv_titulo.setText(main.getLivrosDoacao().get(index).getTitulo());
         tv_ano.setText(main.getLivrosDoacao().get(index).getAno());
         tv_autor.setText(main.getLivrosDoacao().get(index).getAutor());
+        doador.setText(main.getLivrosDoacao().get(index).getDoador().toString());
         //iv_capa = main.getLivrosDoacao().get(index).getCapa();
     }
 

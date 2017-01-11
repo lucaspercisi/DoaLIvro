@@ -1,4 +1,4 @@
-package uffs.np2prog1.brunoribeiro.lucaspercisi.doalivro;
+package tk.doalivro.doalivro;
 
 import android.app.*;
 import android.content.DialogInterface;
@@ -7,10 +7,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class TelaDoaLivro {
-    MainActivity main;
-    TelaPrincipal tela_principal;
-    EditText et_titulo, et_ano, et_autor;
-    Button b_doar, b_cancelar;
+    private MainActivity main;
+    private TelaPrincipal tela_principal;
+    private EditText et_titulo, et_ano, et_autor;
+    private Button b_doar, b_cancelar;
 
     public TelaDoaLivro(MainActivity main, TelaPrincipal tela_principal) {
         setMain(main);
@@ -59,7 +59,7 @@ public class TelaDoaLivro {
                             return;
                         }
 
-                        main.getLivrosDoacao().add(new Livro(titulo, ano, autor, main.user.getNome(), main.user.getEmail()));//CONSTRÓI NOVO LIVRO COM OS DADOS INFORMADOS NO CAMPO
+                        main.getLivrosDoacao().add(new Livro(titulo, ano, autor, main.user));//CONSTRÓI NOVO LIVRO COM OS DADOS INFORMADOS NO CAMPO
                         main.user.setDoacoes(main.user.getDoacoes() + 1);//INCREMENTA ACUMULATIVO DE DOAÇÃOES
                         main.ExibirMensagem("Parabéns, você contribuiu para um mundo melhor.");
 

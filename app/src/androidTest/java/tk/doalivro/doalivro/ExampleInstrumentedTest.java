@@ -1,4 +1,4 @@
-package uffs.np2prog1.brunoribeiro.lucaspercisi.doalivro;
+package tk.doalivro.doalivro;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("uffs.np2prog1.brunoribeiro.lucaspercisi.doalivro", appContext.getPackageName());
+        assertEquals("tk.doalivro.doalivro", appContext.getPackageName());
     }
 }
