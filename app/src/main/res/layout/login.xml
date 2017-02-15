@@ -3,12 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/capa_doa_livro">
+    android:background="@drawable/capa_login_doalivro">
+
+    <TextView
+        android:text="BEM VINDO AO DOALIVRO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Entre com sua conta do Google:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/botao_entrar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        />
 
 </LinearLayout>

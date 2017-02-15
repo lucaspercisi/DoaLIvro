@@ -3,14 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/capa_doa_livro">
+    android:background="@drawable/capa_doa_livro_2">
+
+    <TextView
+        android:text="DOAR LIVRO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal|bold" />
 
     <TextView
         android:text="@string/titulo"
         android:id="@+id/tv_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
+        android:paddingTop="20dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -46,12 +55,14 @@
         android:text="DOAR"
         android:id="@+id/b_doar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.Light.Button.Inset" />
 
     <Button
         android:text="CANCELAR"
         android:id="@+id/b_cancelar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.Light.Button.Inset" />
 
 </LinearLayout>

@@ -3,30 +3,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/capa_doa_livro">
+    android:background="@drawable/capa_doa_livro_2">
+
+    <TextView
+        android:text="BEM VINDO AO DOALIVRO :)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal|bold" />
 
     <Button
         android:text="@string/livros_em_doacao"
         android:id="@+id/b_livrosDoacao"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@android:style/Widget.Holo.Light.Button.Inset" />
 
     <Button
         android:text="@string/doar_livro"
         android:id="@+id/b_doar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.Light.Button.Inset" />
 
     <Button
         android:text="@string/sair"
         android:id="@+id/botao_sair"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.Light.Button.Inset" />
 
     <Button
         android:text="@string/revogar"
         android:id="@+id/botao_revogar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.Light.Button.Inset" />
 
 </LinearLayout>

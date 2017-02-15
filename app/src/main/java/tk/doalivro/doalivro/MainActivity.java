@@ -182,6 +182,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         if (signedIn) {
             tela_principal.carregaTela();
         } else {
+            //tela_principal.carregaTela();
             tela_login.carregaTela();
         }
     }

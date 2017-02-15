@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/capa_doa_livro">
+    android:background="@drawable/capa_doa_livro_2">
 
     <!--<ImageView-->
         <!--android:id="@+id/iv_capa"-->
@@ -13,9 +13,20 @@
         <!--android:layout_height="200dp" />-->
 
     <TextView
+        android:text="LIVROS EM DOAÇÃO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="normal|bold" />
+
+
+    <TextView
         android:text="@string/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:textAppearance="?android:attr/textAppearanceMedium"/>
 
     <TextView
@@ -68,29 +79,40 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#fb7600"/>
 
+
     <Button
         android:text="@string/solicitar"
         android:id="@+id/b_solicitar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="visible"
+        style="@android:style/Widget.Holo.Light.Button.Inset" />
 
     <Button
         android:text="@string/proximo"
         android:id="@+id/b_proximo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.Light.Button.Inset"
+        android:elevation="14dp" />
 
     <Button
 
         android:text="@string/anterior"
         android:id="@+id/b_anterior"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.Light.Button.Inset"
+        android:elevation="14dp" />
 
     <Button
         android:text="@string/fechar"
         android:id="@+id/b_fechar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Holo.Light.Button.Inset" />
 
 </LinearLayout>

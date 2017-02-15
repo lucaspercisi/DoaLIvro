@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.io.IOException;
+
 public class TelaDoaLivro {
     private MainActivity main;
     private TelaPrincipal tela_principal;
@@ -39,9 +41,13 @@ public class TelaDoaLivro {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
-                        String titulo = et_titulo.getText().toString();
-                        String ano = et_ano.getText().toString();
-                        String autor = et_autor.getText().toString();
+                        String titulo = null;
+                        String ano = null;
+                        String autor = null;
+
+                        titulo = et_titulo.getText().toString();
+                        ano = et_ano.getText().toString();
+                        autor = et_autor.getText().toString();
 
                         //POSSÍVEIS ERROS DE DIGITAÇÃO
                         if(titulo == null || titulo.trim().isEmpty()) {
@@ -54,11 +60,12 @@ public class TelaDoaLivro {
                             return;
                         }
 
-                        if(autor == null || autor.trim().isEmpty()){
+                        if(autor == null || autor.trim().isEmpty()) {
                             main.ExibirMensagem("AUTOR INCORRETO");
                             return;
                         }
 
+                        //main.getLivrosDoacao().add(new Livro(titulo, ano, autor, main.user));//CONSTRÓI NOVO LIVRO COM OS DADOS INFORMADOS NO CAMPO
                         main.getLivrosDoacao().add(new Livro(titulo, ano, autor, main.user));//CONSTRÓI NOVO LIVRO COM OS DADOS INFORMADOS NO CAMPO
                         main.user.setDoacoes(main.user.getDoacoes() + 1);//INCREMENTA ACUMULATIVO DE DOAÇÃOES
                         main.ExibirMensagem("Parabéns, você contribuiu para um mundo melhor.");
