@@ -47,7 +47,9 @@ public class TelaListaLivros {
         b_solicitar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(main.user.solicitar()){
+                if(main.getLivrosDoacao().get(index).getDoador() == main.user){
+                    main.ExibirMensagem("Você não pode solicitar um livro seu.");
+                }else if(main.user.solicitar()){
                     main.user.setSolicitacoes(main.user.getSolicitacoes() + 1); //INCREMENTA ACUMULATIVO DE SOLICITAÇÕES
                     try {
                         main.getLivrosDoacao().remove(index);//REMOVE DA LISTA DE DOAÇÃO
@@ -56,11 +58,10 @@ public class TelaListaLivros {
                         main.ExibirMensagem(":/\nOcorreu um erro ao tentar solicitar o livro. Por favor tente mais terde.");
                     }
                     main.ExibirMensagem("Enviamos um email para o doador solicitando este livro (mentira).\nAguarde o contato.");
-                    tela_principal.carregaTela();
                 }else{
                     main.ExibirMensagem(String.format("Você só pode solicitar um livro para cada um que doar.\nAté agora você doou %d e recebeu %d livros.", main.user.getDoacoes(), main.user.getSolicitacoes()));
-                    tela_principal.carregaTela();
                 }
+                tela_principal.carregaTela();
             }
         });
 
