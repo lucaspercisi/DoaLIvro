@@ -54,11 +54,11 @@ public class TelaListaLivros {
                     }catch(Exception e){
                         e.getMessage();
                         main.ExibirMensagem(":/\nOcorreu um erro ao tentar solicitar o livro. Por favor tente mais terde.");
-                }
-                    main.ExibirMensagem("Entre em contato com o doador pelo e-mail.");
+                    }
+                    main.ExibirMensagem("Enviamos um email para o doador solicitando este livro (mentira).\nAguarde o contato.");
                     tela_principal.carregaTela();
                 }else{
-                    main.ExibirMensagem("Envie um email para: " + main.getLivrosDoacao().get(index).getDoador().getEmail() + "\nsolicitando este livro.");
+                    main.ExibirMensagem(String.format("Você só pode solicitar um livro para cada um que doar.\nAté agora você doou %d e recebeu %d livros.", main.user.getDoacoes(), main.user.getSolicitacoes()));
                     tela_principal.carregaTela();
                 }
             }

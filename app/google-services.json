@@ -13,21 +13,13 @@
       },
       "oauth_client": [
         {
-          "client_id": "612082537404-5q1b8329ckfd4i4m7a4nq50obq7pf6ni.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "tk.doalivro",
-            "certificate_hash": "85FD94CCCB5FA4B2FB16F1D0ED20EBA6521BABAB"
-          }
-        },
-        {
-          "client_id": "612082537404-ka8qtdfu9cpnqrf0j6c5q4n66q5j48kt.apps.googleusercontent.com",
+          "client_id": "612082537404-9mg6ceptrkvfcg7ro44g4mb35oqmmh4f.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBpqzOiIIiarBWHO2xkC_GCQOTIZMePJQ4"
+          "current_key": "AIzaSyC6pVmCyrnrpv9-_Ryh-6g0wZd-nvTvV54"
         }
       ],
       "services": {
@@ -52,21 +44,21 @@
       },
       "oauth_client": [
         {
-          "client_id": "612082537404-q6snl4ude9rflmrcnmlt25dcrqkm1t3c.apps.googleusercontent.com",
+          "client_id": "612082537404-n06fll3j0de2vtjfk9nt3qlk5qtngtel.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "tk.doalivro.doalivro",
-            "certificate_hash": "85FD94CCCB5FA4B2FB16F1D0ED20EBA6521BABAB"
+            "certificate_hash": "FD31C5B6993B11F48C9C8DD7ECA4E36D0A8B0B98"
           }
         },
         {
-          "client_id": "612082537404-ka8qtdfu9cpnqrf0j6c5q4n66q5j48kt.apps.googleusercontent.com",
+          "client_id": "612082537404-9mg6ceptrkvfcg7ro44g4mb35oqmmh4f.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBpqzOiIIiarBWHO2xkC_GCQOTIZMePJQ4"
+          "current_key": "AIzaSyC6pVmCyrnrpv9-_Ryh-6g0wZd-nvTvV54"
         }
       ],
       "services": {
