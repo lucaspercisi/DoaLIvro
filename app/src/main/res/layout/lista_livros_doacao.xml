@@ -49,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#fb7600"/>
+        android:textColor="?attr/colorControlActivated"/>
 
     <TextView
         android:text="@string/autor"

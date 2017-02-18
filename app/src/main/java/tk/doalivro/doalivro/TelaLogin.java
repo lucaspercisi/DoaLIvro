@@ -1,3 +1,6 @@
+/**
+ * Classe para carregar a tela de login e realizar o login com ama conta do Google.
+ */
 package tk.doalivro.doalivro;
 
 import android.view.View;
@@ -16,10 +19,11 @@ public class TelaLogin implements View.OnClickListener {
         setTela_principal(tela_principal);
     }
 
+    //Função genérica para carregar uma tela
     public void carregaTela() {
 
-        main.setContentView(R.layout.login);
-        signIn_btn = (SignInButton) main.findViewById(R.id.botao_entrar);
+        main.setContentView(R.layout.login);//tela carregada
+        signIn_btn = (SignInButton) main.findViewById(R.id.botao_entrar);//
         main.customizeSignBtn(signIn_btn);
         setBtnClickListeners(signIn_btn);
 
@@ -43,9 +47,8 @@ public class TelaLogin implements View.OnClickListener {
         signIn_btn.setOnClickListener(this);
     }
 
-    //public MainActivity getMain() {return main;}
+    //Setters
     public void setMain(MainActivity main) {this.main = main;}
-    //public TelaPrincipal getTela_principal() {return tela_principal;}
     public void setTela_principal(TelaPrincipal tela_principal) {this.tela_principal = tela_principal;}
 
 }

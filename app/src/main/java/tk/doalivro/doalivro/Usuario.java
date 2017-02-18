@@ -1,3 +1,7 @@
+/**
+ * Classe para definir as características do objeto Usuário
+ */
+
 package tk.doalivro.doalivro;
 
 public class Usuario {

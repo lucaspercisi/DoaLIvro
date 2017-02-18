@@ -1,3 +1,8 @@
+/**
+ * Classe Livro: Para criação do objeto livro (somente atributos, getters e setters e seu construtor.
+ */
+
+
 package tk.doalivro.doalivro;
 
 public class Livro {
