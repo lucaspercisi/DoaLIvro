@@ -14,7 +14,7 @@ UNIVERSIDADE FEDERAL DA FRONTEIRA SUL
               tiver doado mais do que retirado. Ou seja, para retirar um livro da lista de doações
               o usuário deve doar no minimo uma vez antes de retirar novamente.
 
-  DESAFIOS:   - Compreender o funcionamento do Android.
-              - Tentar criar uma interface amigável e intuitiva.
-              - Inserção da API do Google.
+  DESAFIOS:   Compreender o funcionamento do Android.
+              Tentar criar uma interface amigável e intuitiva.
+              Inserção da API do Google.
 ===================================================================================================              
