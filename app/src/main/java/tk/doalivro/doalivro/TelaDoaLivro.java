@@ -49,9 +49,9 @@ public class TelaDoaLivro {
                         ano = et_ano.getText().toString();
                         autor = et_autor.getText().toString();
 
-                        //POSSÍVEIS ERROS DE DIGITAÇÃO
+                        //POSSIVEIS ERROS DE DIGITAÇÃO
                         if(titulo == null || titulo.trim().isEmpty()) {
-                            main.ExibirMensagem("TÍTULO INCORRETO");
+                            main.ExibirMensagem("TITULO INCORRETO");
                             return;
                         }
 
