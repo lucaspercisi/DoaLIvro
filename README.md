@@ -1,5 +1,4 @@
 # DoaLivro
-===================================================================================================
 UNIVERSIDADE FEDERAL DA FRONTEIRA SUL
 
   TRABALHO FINAL DE PROGRAMAÇÃO I - 15/02/2017
@@ -16,5 +15,4 @@ UNIVERSIDADE FEDERAL DA FRONTEIRA SUL
 
   DESAFIOS:   Compreender o funcionamento do Android.
               Tentar criar uma interface amigável e intuitiva.
-              Inserção da API do Google.
-===================================================================================================              
+              Inserção da API do Google.          
